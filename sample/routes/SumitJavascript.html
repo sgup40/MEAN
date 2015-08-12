@@ -1,17 +1,15 @@
 
-<html>
+<html ng-app='myapp'>
 <body>
-<script>
-for (i = 0; i < 100; i++) { 
-	var a = "MS_OR"+i+"=11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
-    document.cookie = a;
-    if(i=500)
-    {
-    alert("hit");
-    }
-
-}
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 </script>
+<script src='sumitJavascript.js'></script>
+<h1>First Angular module</h1>
+UserName <input ng-model='username'><br/>
+Password <input ng-model='password'>
+
+<h2> username is :: {{username}} </h2>
+<h2> password id :: {{password}} </h2>
+
 </body>
 </html>
