@@ -26,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.router);
 
 app.get('/', routes.index);
+app.post('/login', routes.submit);
 app.get('/users', users.list);
 
 /// catch 404 and forwarding to error handler
@@ -56,6 +57,7 @@ app.use(function(err, req, res, next) {
         error: {}
     });
 });
+
 
 
 module.exports = app;

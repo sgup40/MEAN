@@ -2,6 +2,19 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/signin.css')
   body
-    block content
+    
+    div.container   
+     h1  SPARTANS First Page
+     form.form-signin(name="login", method="post",action="/login")
+        h2.form-signin-heading Please Sign-In
+        label UserName
+        input.form-control(type="text", name="username")
+
+        label Password
+        input.form-control(type="password", name="password")
+        br
+        input.btn.bt-primary.btn-block.btn-lg(type="submit", value="Login")
